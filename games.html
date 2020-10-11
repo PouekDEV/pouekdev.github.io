@@ -1,5 +1,8 @@
 <html>
     <style>
+       @media screen and (max-width: 400px) {
+      @-ms-viewport { width: 320px }
+      }
         .container {
   position: relative;
   text-align: center;
@@ -101,6 +104,18 @@
           cursor: pointer;
           border: 2px solid #000000;
         }
+        .button4 {
+          border: none;
+          color: white;
+          padding: 15px 45px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 40px;
+          margin: 4px 2px;
+          cursor: pointer;
+          border: 2px solid #ff0000;
+        }
         .button1:hover {
   background-color: #696969;
   color: rgb(255, 255, 255);
@@ -109,7 +124,13 @@
   background-color: #696969;
   color: rgb(255, 255, 255);
 }
+.button4:hover {
+  background-color: #ff000085;
+  color: rgb(255, 255, 255);
+}
 .button1 {background-color: #000000;} /* Black */
+.button2 {background-color: #202020;} /* Gray */
+.button4 {background-color: #000000;} /* Black */
 </style>
     <title>
         GAMES - Pouek Dev
@@ -132,7 +153,7 @@
 <iframe frameborder="0" src="https://itch.io/embed/587375?dark=true" width="552" height="167"><a href="https://pouek.itch.io/definitive">Definitive by Pouek</a></iframe>
 <iframe frameborder="0" src="https://itch.io/embed/548022?dark=true" width="552" height="167"><a href="https://pouek.itch.io/happy-pix-mas">Happy PIX-MAS! by Pouek</a></iframe>
 </div>
-<p style="text-align:center;"><button class="button button1" onclick="window.location.href='./index.html'">Back</button></p>
+<p style="text-align:center;"><button class="button button4" onclick="window.location.href='./index.html'">Back</button></p>
 <div class="container">
     <p style="text-align:left;"><img src="down.png" alt="down"></p>
     <div class="centered6"><blockquote>@2020 by Pouek</blockquote></div>
