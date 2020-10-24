@@ -36,6 +36,20 @@
   transform: translate(-50%, -50%);
 }
 
+.centered8 {
+    position: absolute;
+  top: 125%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.centered7 {
+    position: absolute;
+  top: 115%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .centered6 {
     position: absolute;
   top: 90%;
@@ -108,12 +122,28 @@
           cursor: pointer;
           border: 2px solid #000000;
         }
+        .button3 {
+          border: none;
+          color: white;
+          padding: 15px 45px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 40px;
+          margin: 4px 2px;
+          cursor: pointer;
+          border: 2px solid #00484d;
+        }
         .button1:hover {
   background-color: #696969;
   color: rgb(255, 255, 255);
 }
 .button2:hover {
   background-color: #696969;
+  color: rgb(255, 255, 255);
+}
+.button3:hover {
+  background-color: #00000000;
   color: rgb(255, 255, 255);
 }
         
@@ -144,7 +174,11 @@
     <div class="centered5"><p style="text-align:center;"><button class="button button1" onclick="window.location.href='./games.html'">Games</button></p></div>
     <div class="centered6"><p style="text-align:center;"><button class="button2 button2" onclick="window.location.href='./news.html'"><big>📣News📣</big></button></p></div>
 </div>
-<br><br><br><br>
+<div class="other">
+  <div class="centered7"><blockquote><big>Looking for something else?</big></blockquote></div>
+  <div class="centered8"><p style="text-align:center;"><button class="button2 button3" onclick="window.location.href='./other.html'"><big>Other</big></button></p></div>
+</div>
+<br><br><br><br><br><br><br><br>
 <div class="container">
     <p style="text-align:left;"><img src="down.png" alt="down"></p>
     <div class="centered6"><blockquote>@2020 by Pouek</blockquote></div>

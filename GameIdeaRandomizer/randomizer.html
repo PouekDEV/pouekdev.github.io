@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Idea Randomizer</title>
+</head>
+<body style="background-color:black;" text="#ffffff">
+    <div id="app">
+    <div class="randomizer-box">
+        <div class="name-box">
+        <div class="genre">
+<h4>Genre</h4>
+        </div>
+        <div class="mechanic">
+<h4>Mechanic</h4>
+        </div>
+        <div class="style">
+<h4>Style</h4>
+        </div>
+        <div class="goal">
+<h4>Goal</h4>
+        </div>
+    </div>
+    <div class="text-box">
+        <div class="genre" v-for="(genre, index) in ideas.genre">
+{{ ideas.genre }}
+        </div>
+        <div class="mechanic">
+            {{ ideas.mechanic }}
+        </div>
+        <div class="style">
+            {{ ideas.style }}
+        </div>
+        <div class="goal">
+            {{ ideas.goal }}
+        </div>
+    </div>
+    <button @click="randomize(index)">Randomize</button>
+    </div>
+</div>
+</body>
+<script src="js/vue.js"></script>
+<script src="js/index.js"></script>
+<script src="js/ideas.js"></script>
+</html>
