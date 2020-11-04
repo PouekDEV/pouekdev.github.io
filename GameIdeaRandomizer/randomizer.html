@@ -1,4 +1,28 @@
 <html lang="en">
+    <style>
+.container {
+position: relative;
+text-align: center;
+color: white;
+}
+.button4 {
+          border: none;
+          color: white;
+          padding: 15px 45px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 40px;
+          margin: 4px 2px;
+          cursor: pointer;
+          border: 2px solid #ff0000;
+        }
+.button4:hover {
+  background-color: #ff000085;
+  color: rgb(255, 255, 255);
+}
+.button4 {background-color: #000000;} /* Black */
+</style>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -6,40 +30,45 @@
 </head>
 <body style="background-color:black;" text="#ffffff">
     <div id="app">
-    <div class="randomizer-box">
+    <div class="container">
         <div class="name-box">
-        <div class="genre">
-<h4>Genre</h4>
+            <p style="text-align:center;"><div class="genre">
+<h4><p style="text-align:center;"><big><big><big>Genre</big></big></big></p></h4>
+<big><blockquote><p id="genree", style="color:#00c3ff"></blockquote></big></p>
         </div>
         <div class="mechanic">
-<h4>Mechanic</h4>
+            <h4><p style="text-align:center;"><big><big><big>Mechanic</big></big></big></p></h4>
+            <big><blockquote><p id="mechanicc", style="color:#00c3ff"></blockquote></big></p>
         </div>
         <div class="style">
-<h4>Style</h4>
+            <h4><p style="text-align:center;"><big><big><big>Style</big></big></big></p></h4>
+            <big><blockquote><p id="stylee", style="color:#00c3ff"></blockquote></big></p>
         </div>
         <div class="goal">
-<h4>Goal</h4>
+            <h4><p style="text-align:center;"><big><big><big>Goal</big></big></big></p></h4>
+            <big><blockquote><p id="goall", style="color:#00c3ff"></blockquote></big></p>
         </div>
+        <p id="time", style="color:#ff0000"></p>
+        <blockquote>You still can refresh page without waiting</blockquote>
     </div>
-    <div class="text-box">
-        <div class="genre" v-for="(genre, index) in ideas.genre">
-{{ ideas.genre }}
-        </div>
-        <div class="mechanic">
-            {{ ideas.mechanic }}
-        </div>
-        <div class="style">
-            {{ ideas.style }}
-        </div>
-        <div class="goal">
-            {{ ideas.goal }}
-        </div>
+   
     </div>
-    <button @click="randomize(index)">Randomize</button>
+    <script>
+        var genre = ["Incremental","Simulation","Platformer","Shooter","Fighting","Stealth","Survival","Battle Royale","Rhythm","Survival horror","Metroidvania","Text adventure","Graphic adventures","Visual novel","Action RPG","MMORPG","Roguelike","Life simulator","Tower Defense","Racing","Casual","Party","Trivia","Typing","Open World"];
+        var mechanic = ["Spying","Turn based movement","Action Points","Cards","Capture/Eliminate","Catch-up","Dice","Movement","Resource Management"];
+        var style = ["Pixelart","2D","3D","4D","VR","AR","Realistic","Text","8bit"];
+        var goal = ["Finish level","Quest","Loss avoidance","Puzzle Solving","Races","Structure Building","Territory Control","Victory Points"]
+        var fgenre = genre[Math.floor(Math.random()*genre.length)];
+        var fmechanic = mechanic[Math.floor(Math.random()*mechanic.length)];
+        var fstyle = style[Math.floor(Math.random()*style.length)];
+        var fgoal = goal[Math.floor(Math.random()*goal.length)];
+        document.getElementById("genree").innerHTML = fgenre;
+        document.getElementById("mechanicc").innerHTML = fmechanic;
+        document.getElementById("stylee").innerHTML = fstyle;
+        document.getElementById("goall").innerHTML = fgoal;
+    </script>
     </div>
 </div>
 </body>
-<script src="js/vue.js"></script>
-<script src="js/index.js"></script>
-<script src="js/ideas.js"></script>
+<script src="js/reloadpage.js"></script>
 </html>
