@@ -1,4 +1,4 @@
-proxyurl = "https://cors-anywhere.herokuapp.com/"
+proxyurl = "https://cors-anywhere.herokuapp.com/"//"https://cors.pouekdev.repl.co/"
 warningmessagems = "❌One of bot latency is high❌"
 warningmessagecpu = "❌One of bot cpu usage is high❌"
 warningmessageram = "❌One of bot ram usage is high❌"
@@ -14,7 +14,7 @@ setInterval(() => {
             console.log("Error");
             }
             else{
-                document.getElementById("Ram").innerHTML = "Ram usage " + body.ram + "MB/25GB";
+                document.getElementById("Ram").innerHTML = "Ram usage " + body.ram + "MB/500MB";
                 if(body.ram >= 2048){
                     document.getElementById("ramw").innerHTML = warningmessageram;
                     document.getElementById("operational").innerHTML = operationalnot;
@@ -51,7 +51,7 @@ new function respect(){
                 console.log("Error");
                 }
                 else{
-                    document.getElementById("Ramr").innerHTML = "Ram usage " + body.ram + "MB/25GB";
+                    document.getElementById("Ramr").innerHTML = "Ram usage " + body.ram + "MB/500MB";
                     if(body.ram >= 2048){
                         document.getElementById("ramw").innerHTML = warningmessageram;
                         document.getElementById("operational").innerHTML = operationalnot;
@@ -88,7 +88,7 @@ new function shell(){
                 console.log("Error");
                 }
                 else{
-                    document.getElementById("Rams").innerHTML = "Ram usage " + body.ram + "MB/25GB";
+                    document.getElementById("Rams").innerHTML = "Ram usage " + body.ram + "MB/500MB";
                     if(body.ram >= 2048){
                         document.getElementById("ramw").innerHTML = warningmessageram;
                         document.getElementById("operational").innerHTML = operationalnot;
@@ -125,7 +125,7 @@ new function sweepy(){
                 console.log("Error");
                 }
                 else{
-                    document.getElementById("Ramss").innerHTML = "Ram usage " + body.ram + "MB/25GB";
+                    document.getElementById("Ramss").innerHTML = "Ram usage " + body.ram + "MB/500MB";
                     if(body.ram >= 2048){
                         document.getElementById("ramw").innerHTML = warningmessageram;
                         document.getElementById("operational").innerHTML = operationalnot;
