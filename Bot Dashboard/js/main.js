@@ -15,7 +15,7 @@ setInterval(() => {
             }
             else{
                 document.getElementById("Ram").innerHTML = "Ram usage " + body.ram + "MB/500MB";
-                if(body.ram >= 2048){
+                if(body.ram >= 400){
                     document.getElementById("ramw").innerHTML = warningmessageram;
                     document.getElementById("operational").innerHTML = operationalnot;
                 }
@@ -52,7 +52,7 @@ new function respect(){
                 }
                 else{
                     document.getElementById("Ramr").innerHTML = "Ram usage " + body.ram + "MB/500MB";
-                    if(body.ram >= 2048){
+                    if(body.ram >= 400){
                         document.getElementById("ramw").innerHTML = warningmessageram;
                         document.getElementById("operational").innerHTML = operationalnot;
                     }
@@ -89,7 +89,7 @@ new function shell(){
                 }
                 else{
                     document.getElementById("Rams").innerHTML = "Ram usage " + body.ram + "MB/500MB";
-                    if(body.ram >= 2048){
+                    if(body.ram >= 400){
                         document.getElementById("ramw").innerHTML = warningmessageram;
                         document.getElementById("operational").innerHTML = operationalnot;
                     }
@@ -126,7 +126,7 @@ new function sweepy(){
                 }
                 else{
                     document.getElementById("Ramss").innerHTML = "Ram usage " + body.ram + "MB/500MB";
-                    if(body.ram >= 2048){
+                    if(body.ram >= 400){
                         document.getElementById("ramw").innerHTML = warningmessageram;
                         document.getElementById("operational").innerHTML = operationalnot;
                     }
