@@ -153,3 +153,40 @@ new function sweepy(){
                 })
         },refresht);
             }
+//Fakt Bot
+new function sweepy(){
+    setInterval(() => {
+        fetch(proxyurl + "https://faktbotdc.pouekdev.repl.co")
+                .then(res => res.json()).then(body => {
+                if(!body) {
+                console.log("Error");
+                }
+                else{
+                    document.getElementById("Ramf").innerHTML = "Ram usage " + body.ram + "MB/500MB";
+                    if(body.ram >= 400){
+                        document.getElementById("ramw").innerHTML = warningmessageram;
+                        document.getElementById("operational").innerHTML = operationalnot;
+                    }
+                    else{
+                        document.getElementById("operational").innerHTML = operational;
+                    }
+                    document.getElementById("Cpuf").innerHTML = "Cpu usage " + body.cpu + "%";
+                    if(body.cpu >= 80){
+                        document.getElementById("cpuw").innerHTML = warningmessagecpu;
+                        document.getElementById("operational").innerHTML = operationalnot;
+                    }
+                    else{
+                        document.getElementById("operational").innerHTML = operational;
+                    }
+                    document.getElementById("msf").innerHTML = "Latency " + body.ms + "ms";
+                                            if(body.ms >= 280){
+                                                document.getElementById("msw").innerHTML = warningmessagems;
+                                                document.getElementById("operational").innerHTML = operationalnot;
+                                            }
+                                            else{
+                                                document.getElementById("operational").innerHTML = operational;
+                                            }
+                }
+                })
+        },refresht);
+            }
