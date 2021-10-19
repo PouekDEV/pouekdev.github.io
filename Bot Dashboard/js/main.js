@@ -1,3 +1,7 @@
+document.onload = loading();
+function loading(){
+    alert("I don't care how u got here but the dashboard is discontinued and may not work. Have a nice day!");
+}
 proxyurl = ""//"https://cors.pouekdev.repl.co/" //"https://cors-anywhere.herokuapp.com/"
 warningmessagems = "❌One of bot latency is high❌"
 warningmessagecpu = "❌One of bot cpu usage is high❌"
