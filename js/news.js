@@ -1,6 +1,6 @@
 proxyurl = //"https://cors-anywhere.herokuapp.com/"
 console.log("News initiated")
-fetch(proxyurl + "https://pouekdev-news-api.pouekdev.repl.co")
+fetch(proxyurl + "https://news.api.pouekdev.one")
 .then(res => res.json()).then(body => {
     if(!body) {
         console.log("Error");
