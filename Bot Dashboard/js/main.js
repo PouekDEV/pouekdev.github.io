@@ -1,6 +1,6 @@
 document.onload = loading();
 function loading(){
-    alert("I don't care how u got here but the dashboard is discontinued and may not work. Have a nice day!");
+    alert("Hello! Here you can find status for all my discord bots and I mean ALL of them");
 }
 proxyurl = ""//"https://cors.pouekdev.repl.co/" //"https://cors-anywhere.herokuapp.com/"
 warningmessagems = "❌One of bot latency is high❌"
