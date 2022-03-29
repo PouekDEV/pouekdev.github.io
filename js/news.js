@@ -1,4 +1,15 @@
 console.log("News initiated")
+ping('https://news.api.pouekdev.one').then(function() {
+    console.log("News are working")
+}).catch(function(err) {
+    console.log("Fail: " + err);
+    $(".marquee div").css("animation", "marquee 15s linear infinite")
+    var tag = document.createElement("span");
+    var text = document.createTextNode("News are currently unavailable check status.pouekdev.one")
+    tag.appendChild(text);
+    var element = document.getElementById("news");
+    element.appendChild(tag);
+});
 fetch("https://news.api.pouekdev.one")
 .then(res => res.json()).then(body => {
     if(!body) {
@@ -7,6 +18,7 @@ fetch("https://news.api.pouekdev.one")
     }
     else{
         news = body.news;
+        $(".marquee div").css("animation", "marquee " + body.duration + "s linear infinite")
         setnewnews();
     }
 })
