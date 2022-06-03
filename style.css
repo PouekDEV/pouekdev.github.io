@@ -6,6 +6,9 @@ body {
   text-align: center;
   font-size: 15px;
 }
+.aboutme{
+  cursor: pointer; 
+}
 .container {
   position: relative;
   text-align: center;
