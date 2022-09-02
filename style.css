@@ -7,7 +7,8 @@ body {
   font-size: 15px;
 }
 .aboutme{
-  cursor: pointer; 
+  cursor: pointer;
+  color: white;
 }
 .container {
   position: relative;
@@ -67,6 +68,12 @@ body {
   border: 10px solid #111111;
   border-radius: 40px;
 }
+#linkimg:hover{
+  outline: auto;
+}
+.boxlink{
+  display: inline-block;
+}
 .software {
   border: none;
   color: white;
@@ -111,4 +118,7 @@ body {
 }
 .button1 {
   background-color: #000000;
+}
+.aboutme:hover{
+  color: red;
 }

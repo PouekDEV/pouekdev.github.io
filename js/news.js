@@ -17,6 +17,7 @@ fetch("https://news.api.pouekdev.one")
         document.getElementById("newsbox").style.display = "none";
     }
     else{
+        $('#news').empty();
         news = body.news;
         $(".marquee div").css("animation", "marquee " + body.duration + "s linear infinite")
         setnewnews();
