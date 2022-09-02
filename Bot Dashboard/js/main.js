@@ -19,7 +19,7 @@ function iron() {
           console.log("Error");
         } else {
           document.getElementById("Ram").innerHTML =
-            "Ram usage " + body.ram + "MB/500MB";
+            "Ram usage " + body.ram + "MB/1024MB";
           if (body.ram >= 400) {
             document.getElementById("ramw").innerHTML = warningmessageram;
             document.getElementById("operational").innerHTML = operationalnot;
@@ -55,7 +55,7 @@ function shell() {
           console.log("Error");
         } else {
           document.getElementById("Rams").innerHTML =
-            "Ram usage " + body.ram + "MB/500MB";
+            "Ram usage " + body.ram + "MB/1024MB";
           if (body.ram >= 400) {
             document.getElementById("ramw").innerHTML = warningmessageram;
             document.getElementById("operational").innerHTML = operationalnot;
@@ -92,7 +92,7 @@ function sweepy() {
           console.log("Error");
         } else {
           document.getElementById("Ramss").innerHTML =
-            "Ram usage " + body.ram + "MB/500MB";
+            "Ram usage " + body.ram + "MB/1024MB";
           if (body.ram >= 400) {
             document.getElementById("ramw").innerHTML = warningmessageram;
             document.getElementById("operational").innerHTML = operationalnot;
@@ -129,7 +129,7 @@ function faktbot() {
           console.log("Error");
         } else {
           document.getElementById("Ramf").innerHTML =
-            "Ram usage " + body.ram + "MB/500MB";
+            "Ram usage " + body.ram + "MB/1024MB";
           if (body.ram >= 400) {
             document.getElementById("ramw").innerHTML = warningmessageram;
             document.getElementById("operational").innerHTML = operationalnot;
