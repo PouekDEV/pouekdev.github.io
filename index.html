@@ -2,17 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=0.1">
-    <title>Home - PouekDEV</title>
     <link rel="icon" href="miQZ2R.gif">
-    <meta name="description" content="Are you interested in playing any games or just searching for programs? Even if no come here for a second :) Thank you!">
+    <title>PouekDEV</title>
+    <meta name="description" content="Pouek's personal website">
     <meta property="og:type" content="website">
     <meta property="og:title" content="Pouek_'s Website" />
-    <meta property="og:description" content="Are you interested in playing any games or just searching for programs? Even if no come here for a second :) Thank you!" />
+    <meta property="og:description" content="Pouek's personal website" />
     <meta property="og:url" content="pouekdev.one" />
     <meta property="og:image" content="https://pouekdev.one/miQZ2R.gif" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="skeleton.css">
+    <link rel="stylesheet" href="styles.css">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-KZ4YJ36K6F"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -21,107 +23,124 @@
         gtag('config', 'G-KZ4YJ36K6F');
     </script>
 </head>
-<body style="background-color:rgb(54, 54, 54);" text="#ffffff">
-    <div class="newsbox" id="newsbox">
-        <p style="font-size: 60px;">📣News📣</p>
-        <div class="marquee main">
-            <div id="news">
-
+<body>
+    <div class="marquee main">
+        <div id="news">
+        </div>
+    </div>
+    <div class="section about">
+        <a id="about"></a>
+        <div class="container" style="font-size: 50px;">
+            <br><br>
+            <div class="row">
+                <div class="one-half column">
+                    <img src="src/bettericonkitku.png" height="200" width="200" style="border-radius: 100px; border: 5px solid rgb(255, 255, 255);">
+                    <p style="font-size:30px">Jakub "Pouek_" Starostecki</p>
+                </div>
+                <div class="one-half column">
+                    <p style="font-size:35px">Hello, I'm a <span style="font-size:35px;" id="age"></span> y/o who likes programming. At this moment I am studying Computer Science at Technical School in Poland. I make games and other stuff and I'm still learning a lot! I wanted to program for as long as I remember</p>    
+                </div>
+            </div>
+            <div class="row">
+                <a class="button" href="https://blog.pouekdev.one">Blog</a>
+                <a class="button" href="#projects">Projects</a>
+                <a class="button" href="#games">Games</a>
+                <a class="button" href="#socials">Socials</a>
             </div>
         </div>
     </div>
-    <br>
-    <div class="container">
-        <input type="image" src="miQZ2R.gif" onclick="window.location.href='https://pouekdev.github.io'" style="border-radius: 5px;">
-        <br><br>
-        <p style="text-align:center;" class="aboutme" onclick="window.location.href='./aboutme.html'"><big><big><big><big>Pouek_#5280</big></big></big></big></p>
+    <br class="next_section">
+    <div class="section projects projects-section">
+        <a id="projects"></a>
+        <div class="container">
+            <br><br>
+            <div class="row">
+                <h1 style="font-size:30px">Here are some hand-picked projects that are on my GitHub</h1>
+                <object type="image/svg+xml" data="https://gh-card.dev/repos/PouekDEV/Blog.svg?link_target=_blank"></object>
+                <object type="image/svg+xml" data="https://gh-card.dev/repos/PouekDEV/GD-Replay.svg?link_target=_blank"></object>
+                <object type="image/svg+xml" data="https://gh-card.dev/repos/PouekDEV/pouekdev.github.io.svg?link_target=_blank"></object>
+                <object type="image/svg+xml" data="https://gh-card.dev/repos/PouekDEV/sweepybot.svg?link_target=_blank"></object>
+                <object type="image/svg+xml" data="https://gh-card.dev/repos/PouekDEV/Shell.svg?link_target=_blank"></object>
+                <object type="image/svg+xml" data="https://gh-card.dev/repos/PouekDEV/quick-emoji.svg?link_target=_blank"></object>
+                <object type="image/svg+xml" data="https://gh-card.dev/repos/PouekDEV/Clock-Room-Incremental.svg?link_target=_blank"></object>
+                <object type="image/svg+xml" data="https://gh-card.dev/repos/PouekDEV/Time-Tickle.svg?link_target=_blank"></object>
+            </div>
+        </div>
+        <br class="next_section"><br class="next_section">
     </div>
-    <div class="main">
-        <p style="text-align:center;"><big><big><big><big><big><big>Welcome to my website!</big></big></big></big></big></big></p>
-        <br>
-        <p style="text-align:center;"><big><big><big><big><big><big>I'm making:</big></big></big></big></big></big></p>
+    <div class="section games games-section">
+        <a id="games"></a>
+        <div class="container">
+            <br><br>
+            <h1 style="font-size:30px">And here you can find all games I've made</h1>
+            <div class="row">
+                <div class="one-half column">
+                    <iframe frameborder="0" src="https://itch.io/embed/806395?dark=true" width="440" height="140"><a href="https://pouek.itch.io/halloween-golf">Halloween Golf by Pouek</a></iframe>
+                    <iframe frameborder="0" src="https://itch.io/embed/670238?dark=true" width="440" height="140"><a href="https://pouek.itch.io/box-wooden">Box: Wooden by Pouek</a></iframe>
+                    <iframe frameborder="0" src="https://itch.io/embed/640489?dark=true" width="440" height="140"><a href="https://pouek.itch.io/disinfection">Disinfection by Pouek</a></iframe>
+                    <iframe frameborder="0" src="https://itch.io/embed/587375?dark=true" width="440" height="140"><a href="https://pouek.itch.io/definitive">Definitive by Pouek</a></iframe>    
+                </div>
+                <div class="one-half column">
+                    <iframe frameborder="0" src="https://itch.io/embed/548022?dark=true" width="440" height="140"><a href="https://pouek.itch.io/happy-pix-mas">Happy PIX-MAS! by Pouek</a></iframe>
+                    <iframe frameborder="0" src="https://itch.io/embed/870165?dark=true" width="440" height="140"><a href="https://pouek.itch.io/time-tickle">Time Tickle by Pouek</a></iframe>
+                    <iframe frameborder="0" src="https://itch.io/embed/1363819?dark=true" width="440" height="140"><a href="https://pouek.itch.io/clock-room">Clock Room by Pouek</a></iframe>
+                    <iframe frameborder="0" src="https://itch.io/embed/1608767?dark=true" width="440" height="140"><a href="https://pouek.itch.io/hearts-and-coins">Hearts and Coins by Pouek</a></iframe>
+                </div>
+            </div>
+        </div>
+        <br class="next_section"><br class="next_section">
     </div>
-    <br>
-    <div class="things">
-        <div class="main">
-            <p style="text-align:center;"><input type="image" src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/openmoji/292/memo_1f4dd.png" onclick="window.location.href='https://blog.pouekdev.one'"></p>
-            <p style="text-align:center;"><big><big><big>Blog</big></big></big></p>
+    <div class="section blog-section">
+        <div class="container">
+            <br><br>
+            <div class="row">
+                <div class="one-half column">
+                    <h1 style="font-size:50px">I also have a blog that you can check out</h1>
+                </div>
+                <div class="one-half column">
+                    <img src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/openmoji/292/memo_1f4dd.png">
+                    <br>
+                    <a class="button" style="margin: 0 10px;" href="https://blog.pouekdev.one">Blog</a>
+                </div>
+            </div>
         </div>
-        <br>
-        <div class="main">
-            <p style="text-align:center;"><input type="image" src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/openmoji/292/joystick_1f579-fe0f.png" onclick="window.location.href='./games.html'"></p>
-            <p style="text-align:center;"><big><big><big>Games</big></big></big></p>
-        </div>
-        <br>
-        <div class="main">
-            <p style="text-align:center;"><input type="image" src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/openmoji/292/hammer-and-wrench_1f6e0-fe0f.png" onclick="window.location.href='./projects.html'"></p>
-            <p style="text-align:center;"><big><big><big>Projects</big></big></big></p>
-        </div>
-        <br>
-        <div class="main">
-            <p style="text-align:center;"><input type="image" src="src/mods.png" onclick="window.location.href='./mods.html'"></p>
-            <p style="text-align:center;"><big><big><big>Game Mods</big></big></big></p>
-        </div>
-        <br>
-        <div class="main">
-            <p style="text-align:center;"><input type="image" src="src/dbottag.png" onclick="window.location.href='./bots.html'"></p>
-            <p style="text-align:center;"><big><big><big>Discord Bots</big></big></big></p>
-        </div>
+        <br class="next_section">
     </div>
-    <br>
-    <div class="main">
-        <p style="text-align:center;"><big><big><big><big><big><big>Links</big></big></big></big></big></big></p>
-    </div>
-    <br>
-    <div class="links">
-        <div class="boxlink">
-            <p style="text-align:center;"><input id="linkimg" type="image" width="32" height="32" src="src/GitHub.png" onclick="window.location.href='https://github.com/PouekDEV'"></p>
-            <p style="text-align:center;"><big><big><big>GitHub</big></big></big></p>
-        </div>
-        <div class="boxlink">
-            <p style="text-align:center;"><input id="linkimg" type="image" width="32" height="32" src="src/itchio.png" onclick="window.location.href='https://pouek.itch.io/'"></p>
-            <p style="text-align:center;"><big><big><big>Itch.io</big></big></big></p>
-        </div>
-        <div class="boxlink">
-            <p style="text-align:center;"><input id="linkimg" type="image" width="32" height="32" src="src/Gamejolt.png" onclick="window.location.href='https://gamejolt.com/@Pouek_'"></p>
-            <p style="text-align:center;"><big><big><big>Gamejolt</big></big></big></p>
-        </div>
-        <div class="boxlink">
-            <p style="text-align:center;"><input id="linkimg" type="image" src="src/YouTube.png" onclick="window.location.href='https://www.youtube.com/channel/UCj8r2VkkqW6DZrMN1endz5A'"></p>
-            <p style="text-align:center;"><big><big><big>YouTube</big></big></big></p>
-        </div>
-        <div class="boxlink">
-            <p style="text-align:center;"><input id="linkimg" type="image" width="32" height="32" src="src/topgg.png" onclick="window.location.href='https://top.gg/user/504891362081112065'"></p>
-            <p style="text-align:center;"><big><big><big>Top.gg</big></big></big></p>
-        </div>
-        <div class="boxlink">
-            <p style="text-align:center;"><input id="linkimg" type="image" width="32" height="32" src="src/reddit.png" onclick="window.location.href='https://www.reddit.com/user/Pouek_'"></p>
-            <p style="text-align:center;"><big><big><big>Reddit</big></big></big></p>
-        </div>
-        <div class="boxlink">
-            <p style="text-align:center;"><input id="linkimg" type="image" width="32" height="32" src="src/Steam.png" onclick="window.location.href='https://steamcommunity.com/id/Pouek_/'"></p>
-            <p style="text-align:center;"><big><big><big>Steam</big></big></big></p>
-        </div>
-        <div class="boxlink">
-            <p style="text-align:center;"><input id="linkimg" type="image" height="32" src="src/Twitter.png" onclick="window.location.href='https://twitter.com/Pouek_'"></p>
-            <p style="text-align:center;"><big><big><big>Twitter</big></big></big></p>
-        </div>
-        <div class="boxlink">
-            <p style="text-align:center;"><input id="linkimg" type="image" width="32" height="32" src="src/Twitch.png" onclick="window.location.href='https://www.twitch.tv/pouek_'"></p>
-            <p style="text-align:center;"><big><big><big>Twitch</big></big></big></p>
-        </div>
-        <div class="boxlink">
-            <p style="text-align:center;"><input id="linkimg" type="image" height="32" src="src/buymeacoffe.png" onclick="window.location.href='https://www.buymeacoffee.com/pouek'"></p>
-            <p style="text-align:center;"><big><big><big>Buy me a coffee</big></big></big></p>
+    <div class="section">
+        <a id="socials"></a>
+        <div class="container">
+            <br><br>
+            <div class="row" style="margin: 0 200px;">
+                <input type="image" target="_blank" width="32" height="32" src="src/GitHub.png" onclick="window.location.href='https://github.com/PouekDEV'">
+                <input type="image" target="_blank" width="32" height="32" src="src/itchio.png" onclick="window.location.href='https://pouek.itch.io/'">
+                <input type="image" target="_blank" width="32" height="32" src="src/Gamejolt.png" onclick="window.location.href='https://gamejolt.com/@Pouek_'">
+                <input type="image" target="_blank" src="src/YouTube.png" onclick="window.location.href='https://www.youtube.com/channel/UCj8r2VkkqW6DZrMN1endz5A'">
+                <input type="image" target="_blank" width="32" height="32" src="src/topgg.png" onclick="window.location.href='https://top.gg/user/504891362081112065'">
+                <input type="image" target="_blank" width="32" height="32" src="src/reddit.png" onclick="window.location.href='https://www.reddit.com/user/Pouek_'">
+                <input type="image" target="_blank" width="32" height="32" src="src/Steam.png" onclick="window.location.href='https://steamcommunity.com/id/Pouek_/'">
+                <input type="image" target="_blank" height="32" src="src/Twitter.png" onclick="window.location.href='https://twitter.com/Pouek_'">
+                <input type="image" target="_blank" width="32" height="32" src="src/Twitch.png" onclick="window.location.href='https://www.twitch.tv/pouek_'">
+                <input type="image" target="_blank" height="32" src="src/buymeacoffe.png" onclick="window.location.href='https://www.buymeacoffee.com/pouek'">
+                <br>
+            </div>
+            <div class="row">
+                <p style="font-size:30px;color:gray;text-align: center;"><a href="mailto:stuff@pouekdev.one" style="color: gray;text-decoration: none;">stuff@pouekdev.one</a></p>
+                <p style="font-size:20px;color:gray;text-align: center;">@<span id="year"></span> Pouek_</p>
+            </div>
         </div>
     </div>
-    <br><br>
-    <div class="main">
-        <p style="text-align:center;"><big><big><big><big><big><big>Need help? DM me on discord Pouek_#5280</big></big></big></big></big></big></p>
-        <p style="text-align:center;"><big><big><big><big><big><big>or email me stuff@pouekdev.one</big></big></big></big></big></big></p>
-        <p style="text-align:center;"><big><big><big><big><big><big>@2022 by Pouek_</big></big></big></big></big></big></p>
-    </div>
+    <video autoplay muted loop id="bg">
+        <source src="src/Particles_Background.mp4" type="video/mp4">
+    </video>
 </body>
+<script>
+    const birthday = Date.parse('09 Jun 2007 23:50:00 GMT');
+    var ageDifMs = Date.now() - birthday;
+    var ageDate = new Date(ageDifMs);
+    var myoldness = Math.abs(ageDate.getUTCFullYear() - 1970);
+    document.getElementById("age").innerHTML = myoldness;
+    document.getElementById("year").innerHTML = new Date(Date.now()).getUTCFullYear();
+</script>
 <script src="js/ping.js"></script>
 <script src="js/news.js"></script>
 </html>
