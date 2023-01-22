@@ -15,11 +15,21 @@ br.next_section{
 .blog-section{
     background-color: rgba(0, 0, 0, 0.8);
 }
+.mods-section{
+    background-image: url("src/mods.png");
+}
 .games-section{
     background-image: url("src/games.png");
 }
 .projects-section{
     background-image: url("src/projects.png");
+}
+.clickable{
+    color: gold;
+}
+.clickable:hover{
+    color: blue;
+    cursor: pointer;
 }
 #bg{
     position: fixed;
