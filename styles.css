@@ -17,12 +17,15 @@ br.next_section{
 }
 .mods-section{
     background-image: url("src/mods.png");
+    background-size: cover;
 }
 .games-section{
     background-image: url("src/games.png");
+    background-size: cover;
 }
 .projects-section{
     background-image: url("src/projects.png");
+    background-size: cover;
 }
 .clickable{
     color: gold;
