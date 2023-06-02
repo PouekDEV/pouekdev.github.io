@@ -54,6 +54,7 @@ br.next_section{
     white-space: nowrap;
     overflow: hidden;
     box-sizing: border-box;
+    width: 100%;
 }
 .marquee div{
     display: inline-block;
