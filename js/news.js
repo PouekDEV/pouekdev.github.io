@@ -32,8 +32,8 @@ function setnewnews(){
         amount -= 1;
         console.log(amount)
         var tag = document.createElement("span");
-        var text = document.createTextNode(news[amount] + "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀");
-        tag.appendChild(text);
+        var text = news[amount] + "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀";
+        tag.innerHTML = text;
         var element = document.getElementById("news");
         element.appendChild(tag);
     }
