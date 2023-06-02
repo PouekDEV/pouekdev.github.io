@@ -1,6 +1,6 @@
 body{
     z-index: 1;
-    background-color: rgb(39, 39, 39);
+    background-color: rgb(0, 0, 0);
     color: white;
     font-family: "Courier New";
     margin: auto;
@@ -12,20 +12,17 @@ br.next_section{
 .section{
     z-index: 1;
 }
-.blog-section{
-    background-color: rgba(0, 0, 0, 0.8);
-}
 .mods-section{
-    background-image: url("src/mods.png");
     background-size: cover;
 }
 .games-section{
-    background-image: url("src/games.png");
     background-size: cover;
 }
 .projects-section{
-    background-image: url("src/projects.png");
     background-size: cover;
+}
+.de-description{
+    color: gray;
 }
 .clickable{
     color: gold;

@@ -5,7 +5,7 @@ ping('https://news.api.pouekdev.one').then(function() {
     console.log("Fail: " + err);
     $(".marquee div").css("animation", "marquee 15s linear infinite")
     var tag = document.createElement("span");
-    var text = document.createTextNode("News are currently unavailable check status.pouekdev.one")
+    var text = document.createTextNode("News are currently unavailable")
     tag.appendChild(text);
     var element = document.getElementById("news");
     element.appendChild(tag);
