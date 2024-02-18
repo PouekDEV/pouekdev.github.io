@@ -1,0 +1,51 @@
+﻿Terms of Service
+(11.06.2023)
+
+
+IF YOU DO NOT AGREE WITH ALL OF THESE TERMS OF USE, THEN YOU ARE EXPRESSLY PROHIBITED FROM USING THE BOT AND YOU MUST DISCONTINUE USE IMMEDIATELY.
+
+
+By using this bot you agree to it using a set of baseline data that every bot can access (https://support.discord.com/hc/articles/7933951485975) and reading messages with their contents. 
+
+
+You also agree that you are above the minimum age to use Discord (13).
+
+
+Data used by the bot is not stored and used by the developer in any way other than developing and upgrading the features of the bot.
+
+
+The developer is not responsible for the possible malicious use of the bot in case of an attack.
+
+
+All the code and artwork are the property of the developer and can only be used as said in the license below.
+
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES, OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+In case of any questions related to the above information, you can contact the developer through the provided methods below.
+
+
+Email: stuff@pouekdev.one
+Discord: pouek_
+
+
+Copyright (c) 2023 Jakub Starostecki

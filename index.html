@@ -12,8 +12,11 @@
     <meta property="og:description" content="Pouek's personal website" />
     <meta property="og:url" content="pouekdev.one" />
     <meta property="og:image" content="https://pouekdev.one/miQZ2R.gif" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="skeleton.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/paper.js/0.12.17/paper-full.min.js" integrity="sha512-NApOOz1j2Dz1PKsIvg1hrXLzDFd62+J0qOPIhm8wueAnk4fQdSclq6XvfzvejDs6zibSoDC+ipl1dC66m+EoSQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <link rel="stylesheet" href="styles.css">
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-KZ4YJ36K6F"></script>
     <script>
@@ -24,202 +27,57 @@
     </script>
 </head>
 <body>
-    <div class="marquee main">
-        <div id="news">
+    <div class="main">
+        <div class="container h-100 d-flex flex-column justify-content-center text-center">
+            <div class="display-1">
+                <span id="type" class="display-1"></span>
+            </div>
+            <p class="links">
+                <a target="_blank" href="https://github.com/PouekDEV"><i class="bi bi-github"></i></a>
+                <a target="_blank" href="https://www.youtube.com/channel/UCj8r2VkkqW6DZrMN1endz5A"><i class="bi bi-youtube"></i></a>
+                <a target="_blank" href="https://www.reddit.com/user/Pouek_"><i class="bi bi-reddit"></i></a>
+                <a target="_blank" href="https://steamcommunity.com/id/Pouek_/"><i class="bi bi-steam"></i></a>
+                <a target="_blank" href="https://paypal.me/pouekdev"><i class="bi bi-paypal"></i></a>
+                <a target="_blank" href="https://top.gg/user/504891362081112065"><img src="src/topgg.png" alt="Topgg"></a>
+                <a target="_blank" href="https://modrinth.com/user/PouekDEV"><img style="filter: invert(100%);" src="src/modrinth.svg" alt="Modrinth"></a>
+                <a target="_blank" href="https://pouek.itch.io/"><img src="src/itchio.png" alt="Itch.io"></a>
+            </p>
         </div>
     </div>
-    <div class="section about">
-        <a id="about"></a>
-        <div class="container" style="font-size: 50px;">
-            <br><br>
-            <div class="row">
-                <div class="one-half column">
-                    <img src="src/bettericonkitku.png" alt="Profile Picture" height="200" width="200" style="border-radius: 100px; border: 5px solid rgb(255, 255, 255);">
-                    <p style="font-size:30px">Jakub "Pouek_" Starostecki</p>
-                </div>
-                <div class="one-half column">
-                    <p style="font-size:35px">Hello, I'm a <span style="font-size:35px;" id="age"></span> y/o who likes programming. At this moment I am studying Computer Science at Technical School in Poland. I make games and other stuff and I'm still learning a lot! I wanted to program for as long as I remember</p>    
-                </div>
-            </div>
-            <div class="row">
-                <a class="button" href="https://blog.pouekdev.one">Blog</a>
-                <a class="button" href="#projects">Projects</a>
-                <a class="button" href="#games">Games</a>
-                <a class="button" href="#mods">Mods</a>
-                <a class="button" href="#socials">Socials</a>
-            </div>
-        </div>
-    </div>
-    <br class="next_section">
-    <div class="section blog-section">
-        <div class="container">
-            <br><br>
-            <div class="row">
-                <a id="projects"></a>
-                <h1 style="font-size:50px;text-align: center;">Projects</h1>
-                <br>
-            </div>
-        </div>
-    </div>
-    <div class="section projects projects-section">
-        <div class="container">
-            <br><br>
-            <div class="row">
-                <div class="one-half column">
-                    <h2 class="clickable" onclick="window.open('https://github.com/PouekDEV/Blog');">Blog</h2>
-                    <p class="de-description">JavaScript</p>
-                    <p>My blog that I made from scratch with custom file format PMD (Pouek's Mark Down)</p>
-                </div>
-                <div class="one-half column">
-                    <h2 class="clickable" onclick="window.open('https://github.com/PouekDEV/pouekdev.github.io');">pouekdev.one</h2>
-                    <p class="de-description">HTML5</p>
-                    <p>Source Code of my website</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="one-half column">
-                    <h2 class="clickable" onclick="window.open('https://github.com/PouekDEV/sweepybot');">Sweepy</h2>
-                    <p class="de-description">JavaScript</p>
-                    <p>A source code of Sweepy message cleaning Discord bot</p>
-                </div>
-                <div class="one-half column">
-                    <h2 class="clickable" onclick="window.open('https://github.com/PouekDEV/MYAP');">MYAP</h2>
-                    <p class="de-description">Python</p>
-                    <p>A Minimalistic Youtube Audio Player (MYAP)</p>
-                </div>
-            </div>
-        </div>
-        <br class="next_section"><br class="next_section">
-    </div>
-    <div class="section blog-section">
-        <a id="games"></a>
-        <div class="container">
-            <br><br>
-            <div class="row">
-                <h1 style="font-size:50px;text-align: center;">Games</h1>
-                <br>
-            </div>
-        </div>
-    </div>
-    <div class="section games games-section">
-        <div class="container">
-            <br><br>
-            <div class="row">
-                <div class="one-third column">
-                    <img height="256" width="256" src="https://img.itch.zone/aW1nLzk0MTUzNDYucG5n/315x250%23c/dgJ5x6.png">
-                    <h2 class="clickable" onclick="window.open('https://pouek.itch.io/hearts-and-coins');">Hearts and Coins</h2>
-                    <p>Game about sacrificing your hearts for buffs</p>
-                </div>
-                <div class="one-third column">
-                    <img height="256" width="256" src="https://img.itch.zone/aW1nLzc5NDY4OTQucG5n/315x250%23c/AND%2B9E.png">
-                    <h2 class="clickable" onclick="window.open('https://www.pouekdev.one/Clock-Room-Incremental');">Clock Room</h2>
-                    <p>Incremental game about watching seconds pass by</p>
-                </div>
-                <div class="one-third column">
-                    <img height="256" width="256" src="https://img.itch.zone/aW1nLzQ4OTUzNzgucG5n/315x250%23c/1onCgk.png">
-                    <h2 class="clickable" onclick="window.open('https://www.pouekdev.one/Time-Tickle');">Time Tickle</h2>
-                    <p>Incremental game about time</p>
-                </div>
-            </div>
-        </div>
-        <br class="next_section"><br class="next_section">
-    </div>
-    <div class="section blog-section">
-        <a id="mods"></a>
-        <div class="container">
-            <br><br>
-            <div class="row">
-                <h1 style="font-size:50px;text-align: center;">Game mods</h1>
-                <br>
-            </div>
-        </div>
-    </div>
-    <div class="section games mods-section">
-        <div class="container">
-            <br><br>
-            <div class="row">
-                <div class="one-third column mods">
-                    <img height="256" width="256" src="https://steamuserimages-a.akamaihd.net/ugc/1682644698936924010/B80DE686C1BA97FC3CC053624D71566FC6116FBD/?imw=200&imh=200&ima=fit&impolicy=Letterbox&imcolor=%23000000">
-                    <h2 class="clickable" onclick="window.open('https://steamcommunity.com/sharedfiles/filedetails/?id=2579310609');">Throwable Knife</h2>
-                    <p class="de-description">People Playground</p>
-                    <p>Adds a knife that automatically throws itself when spawned</p>
-                </div>
-                <div class="one-third column mods">
-                    <img height="256" width="256" src="https://steamuserimages-a.akamaihd.net/ugc/2006950725030105679/8BF69CD9A009E21C5BCFD13E667CEF588C169E2C/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000">
-                    <h2 class="clickable" onclick="window.open('https://steamcommunity.com/sharedfiles/filedetails/?id=2922031082');">No Notifications</h2>
-                    <p class="de-description">Cookie Clicker</p>
-                    <p>Instantly closes all notifications that pop up so you don't have to</p>
-                </div>
-                <div class="one-third column mods">
-                    <img height="256" width="256" src="https://steamuserimages-a.akamaihd.net/ugc/2049743797833720592/2DA2A70D6EF84A9725CEFE44EBBC9C2573A921B2/?imw=637&imh=358&ima=fit&impolicy=Letterbox&imcolor=%23000000">
-                    <h2 class="clickable" onclick="window.open('https://steamcommunity.com/sharedfiles/filedetails/?id=2969960111');">Flashbang</h2>
-                    <p class="de-description">The Binding of Isaac</p>
-                    <p>You get hit you get flashbanged. It's as simple as that</p>
-                </div>
-            </div>
-            <br>
-            <div class="row">
-                <div class="one-third column mods">
-                    <img height="256" width="256" src="https://cdn-raw.modrinth.com/data/OB9VEcWN/d7f525c754e128e704fe2373c2d2a99598a59c29.png">
-                    <h2 class="clickable" onclick="window.open('https://modrinth.com/mod/clist');">CList</h2>
-                    <p class="de-description">Minecraft (Fabric)</p>
-                    <p>A simple minimalistic fabric mod for saving your coordinates. No minimaps. Just a list with in-game waypoints.</p>
-                </div>
-            </div>
-        </div>
-        <br class="next_section"><br class="next_section">
-    </div>
-    <div class="section blog-section">
-        <div class="container">
-            <br><br>
-            <div class="row">
-                <div class="one-half column">
-                    <h1 style="font-size:50px">I also have a blog that you can check out</h1>
-                </div>
-                <div class="one-half column">
-                    <img src="src/memo.png" width="120" height="120" alt="Memo" />
-                    <br>
-                    <a class="button" style="margin: 0 10px;" href="https://blog.pouekdev.one">Blog</a>
-                </div>
-            </div>
-        </div>
-        <br class="next_section">
-    </div>
-    <div class="section">
-        <a id="socials"></a>
-        <div class="container">
-            <br><br>
-            <div class="row" style="margin: 0 200px;">
-                <input type="image" target="_blank" alt="GitHub" width="32" height="32" src="src/GitHub.png" onclick="window.open('https://github.com/PouekDEV')">
-                <input type="image" target="_blank" alt="Itchio" width="32" height="32" src="src/itchio.png" onclick="window.open('https://pouek.itch.io/')">
-                <input type="image" target="_blank" alt="GameJolt" width="32" height="32" src="src/Gamejolt.png" onclick="window.open('https://gamejolt.com/@Pouek_')">
-                <input type="image" target="_blank" alt="YouTube" src="src/YouTube.png" onclick="window.open('https://www.youtube.com/channel/UCj8r2VkkqW6DZrMN1endz5A')">
-                <input type="image" target="_blank" alt="Topgg" width="32" height="32" src="src/topgg.png" onclick="window.open('https://top.gg/user/504891362081112065')">
-                <input type="image" target="_blank" alt="Reddit" width="32" height="32" src="src/reddit.png" onclick="window.open('https://www.reddit.com/user/Pouek_')">
-                <input type="image" target="_blank" alt="Steam" width="32" height="32" src="src/Steam.png" onclick="window.open('https://steamcommunity.com/id/Pouek_/')">
-                <input type="image" target="_blank" alt="Twitter" height="32" src="src/Twitter.png" onclick="window.open('https://twitter.com/Pouek_')">
-                <input type="image" target="_blank" alt="Twitch" width="32" height="32" src="src/Twitch.png" onclick="window.open('https://www.twitch.tv/pouek_')">
-                <input type="image" target="_blank" alt="PayPal" width="25" height="32" src="src/paypal.png" onclick="window.open('https://paypal.me/pouekdev')">
-                <br>
-            </div>
-            <div class="row">
-                <p style="font-size:30px;color:gray;text-align: center;"><a href="mailto:stuff@pouekdev.one" style="color: gray;text-decoration: none;">stuff@pouekdev.one</a></p>
-                <p style="font-size:20px;color:gray;text-align: center;">@<span id="year"></span> Pouek_</p>
-            </div>
-        </div>
-    </div>
-    <video autoplay muted loop id="bg">
-        <source src="src/Particles_Background.mp4" type="video/mp4">
-    </video>
+    <footer class="text-center">
+        <p style="color:gray;"><a href="mailto:stuff@pouekdev.one" class="mail">stuff@pouekdev.one</a></p>
+        <p style="color:gray;">&copy;<span id="year"></span></p>
+    </footer>
+    <canvas id="stars"></canvas>
 </body>
 <script>
-    const birthday = Date.parse('09 Jun 2007 00:50:00 GMT');
-    var ageDifMs = Date.now() - birthday;
-    var ageDate = new Date(ageDifMs);
-    var myoldness = Math.abs(ageDate.getUTCFullYear() - 1970);
-    document.getElementById("age").innerHTML = myoldness;
-    document.getElementById("year").innerHTML = new Date(Date.now()).getUTCFullYear();
+    var date = new Date();
+    var strings = ["Pouek_"];
+    if(date.getDate() == 9 && date.getMonth() == 5){
+        strings = ["Pouek_","Today is my birthday","Pouek_"];
+    }
+    if(date.getDate() == 1 && date.getMonth() == 0){
+        strings = ["Pouek_","Happy New Year!","Pouek_"];
+    }
+    var typed = new Typed("#type", {
+        strings: strings,
+        typeSpeed: 100,
+    });
+    document.getElementById("year").innerHTML = date.getUTCFullYear();
 </script>
-<script src="js/ping.js"></script>
-<script src="js/news.js"></script>
+<script type="text/paperscript" canvas="stars">
+    var squarePath = new Path.Rectangle(new Point(20, 20), new Size(20, 20));
+    squarePath.fillColor = "yellow";
+    var squareSymbol = new Symbol(squarePath);
+    for (var i = 0; i < 20; i++){
+        var placedSymbol = squareSymbol.place(new Point(20 + getRandomArbitrary(50,screen.width), 50 + getRandomArbitrary(50,screen.height)));
+        placedSymbol.rotate(i * 10);
+    }
+    function onFrame(event){
+        squareSymbol.definition.rotate(0.2);
+    }
+    function getRandomArbitrary(min, max) {
+        return Math.random() * (max - min) + min;
+    }
+</script>
 </html>
