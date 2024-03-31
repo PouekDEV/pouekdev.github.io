@@ -14,6 +14,15 @@ body{
     color: white;
     text-decoration: none;
 }
+.github{
+    color: white;
+}
+.modrinth{
+    color: #00d845;
+}
+.curseforge{
+    color: #f16436;
+}
 .links img{
     width: 25px;
     vertical-align: text-bottom;
@@ -25,3 +34,40 @@ body{
 .mail:hover{
     color: white;
 }
+.right_arrow{
+    float: right;
+}
+.left_arrow {
+    float: left;
+}
+.right_arrow button{
+    background: none;
+    color: white;
+    border: none;
+}
+.left_arrow button{
+    background: none;
+    color: white;
+    border: none;
+}
+.card img{
+    width: 25px;
+    border-radius: 20%;
+}
+.card{
+    background-color: rgb(25, 25, 25);
+}
+.card-subtitle{
+    color: rgb(140, 140, 140) !important;
+}
+.collection{
+    display: flex;
+    justify-content: space-between;
+}
+.collection, .links, .right_arrow, .left_arrow, #projects_info, .experience_info{
+    animation: fadeIn 2s;
+}
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}  

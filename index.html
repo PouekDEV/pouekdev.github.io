@@ -28,19 +28,81 @@
 <body>
     <div class="main">
         <div class="container h-100 d-flex flex-column justify-content-center text-center">
-            <div class="display-1">
-                <span id="type" class="display-1"></span>
+            <div id="start">
+                <div class="display-1">
+                    <span id="pouek" class="display-1"></span>
+                    <div class="right_arrow">
+                        <button onclick="advance(true)"><i class="bi bi-arrow-right-short"></i></button>
+                    </div>
+                </div>
+                <p class="links">
+                    <a target="_blank" href="https://github.com/PouekDEV"><i class="bi bi-github"></i></a>
+                    <a target="_blank" href="https://www.youtube.com/channel/UCj8r2VkkqW6DZrMN1endz5A"><i class="bi bi-youtube"></i></a>
+                    <a target="_blank" href="https://www.reddit.com/user/Pouek_"><i class="bi bi-reddit"></i></a>
+                    <a target="_blank" href="https://steamcommunity.com/id/Pouek_/"><i class="bi bi-steam"></i></a>
+                    <a target="_blank" href="https://paypal.me/pouekdev"><i class="bi bi-paypal"></i></a>
+                    <a target="_blank" href="https://top.gg/user/504891362081112065"><img src="src/topgg.png" alt="Top.gg"></a>
+                    <a target="_blank" href="https://modrinth.com/user/PouekDEV"><img style="filter: invert(100%);" src="src/modrinth.svg" alt="Modrinth"></a>
+                    <a target="_blank" href="https://pouek.itch.io/"><img src="src/itchio.png" alt="Itch.io"></a>
+                </p>
             </div>
-            <p class="links">
-                <a target="_blank" href="https://github.com/PouekDEV"><i class="bi bi-github"></i></a>
-                <a target="_blank" href="https://www.youtube.com/channel/UCj8r2VkkqW6DZrMN1endz5A"><i class="bi bi-youtube"></i></a>
-                <a target="_blank" href="https://www.reddit.com/user/Pouek_"><i class="bi bi-reddit"></i></a>
-                <a target="_blank" href="https://steamcommunity.com/id/Pouek_/"><i class="bi bi-steam"></i></a>
-                <a target="_blank" href="https://paypal.me/pouekdev"><i class="bi bi-paypal"></i></a>
-                <a target="_blank" href="https://top.gg/user/504891362081112065"><img src="src/topgg.png" alt="Topgg"></a>
-                <a target="_blank" href="https://modrinth.com/user/PouekDEV"><img style="filter: invert(100%);" src="src/modrinth.svg" alt="Modrinth"></a>
-                <a target="_blank" href="https://pouek.itch.io/"><img src="src/itchio.png" alt="Itch.io"></a>
-            </p>
+            <div id="projects" style="display: none;">
+                <div class="display-1">
+                    <div class="left_arrow">
+                        <button onclick="advance(false)"><i class="bi bi-arrow-left-short"></i></button>
+                    </div>
+                    <span id="projects_title" class="display-1"></span>
+                    <div class="right_arrow">
+                        <button onclick="advance(true)"><i class="bi bi-arrow-right-short"></i></button>
+                    </div>
+                </div>
+                <span id="projects_info">Here are some of my projects I am proud of. This list doesn't include any private ones.</span>
+                <br><br><br>
+                <div class="collection">
+                    <div class="card text-white" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title"><img src="https://cdn.modrinth.com/data/OB9VEcWN/d7f525c754e128e704fe2373c2d2a99598a59c29.png" alt="icon"> CList</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">Minecraft Fabric mod</h6>
+                            <p class="card-text">Coordinate List (CList for short) is a simple minimalistic fabric mod for saving your coordinates. No minimaps.</p>
+                            <a target="_blank" href="https://github.com/PouekDEV/CList" class="card-link github">GitHub</a>
+                            <a target="_blank" href="https://modrinth.com/mod/clist" class="card-link modrinth">Modrinth</a>
+                            <a target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/clist" class="card-link curseforge">CurseForge</a>
+                        </div>
+                    </div>
+                    <div class="card text-white" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title"><img src="https://user-images.githubusercontent.com/64737924/234092116-d079857b-37ab-4837-85c2-d3f27b6ea96b.png" alt="icon"> MYAP</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">A GUI python app</h6>
+                            <p class="card-text">A Minimalistic Youtube Audio Player (MYAP) <br><br><img src="https://user-images.githubusercontent.com/64737924/211200492-55e93000-7a1b-4fa4-b855-1a1f135fd07b.png" alt="GUI" style="width: 100%;border-radius: 0%;"></p>
+                            <a target="_blank" href="https://github.com/PouekDEV/MYAP" class="card-link github">GitHub</a>
+                        </div>
+                    </div>
+                    <div class="card text-white" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">This website</h5>
+                            <h6 class="card-subtitle mb-2 text-muted">and my blog</h6>
+                            <p class="card-text">I need to update my blog tho</p>
+                            <a target="_blank" href="https://github.com/PouekDEV/pouekdev.github.io" class="card-link github">GitHub (this website)</a>
+                            <a target="_blank" href="https://github.com/PouekDEV/Blog" class="card-link github">GitHub (blog)</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="experience" style="display: none;">
+                <div class="display-1">
+                    <div class="left_arrow">
+                        <button onclick="advance(false)"><i class="bi bi-arrow-left-short"></i></button>
+                    </div>
+                    <span id="experience_title" class="display-1"></span>
+                </div>
+                <br><br><br>
+                <div class="experience_info">
+                    I know HTML, JS, CSS, C++, SQL, Java, PHP, Python, Some Kotlin, Android Studio, Bootstrap, jQuery, Some React.<br>
+                    I can speak English and Polish.<br>
+                    I also know how to manage MySQL databases and Linux servers (mainly Debian and Ubuntu).<br>
+                    And I'm still learning a lot!
+                </div>
+            </div>
         </div>
     </div>
     <footer class="text-center">
@@ -50,6 +112,7 @@
 </body>
 <script>
     var date = new Date();
+    var side = 0;
     var strings = ["Pouek_"];
     if(date.getDate() == 9 && date.getMonth() == 5){
         strings = ["Pouek_","Today is my birthday","Pouek_"];
@@ -57,10 +120,46 @@
     if(date.getDate() == 1 && date.getMonth() == 0){
         strings = ["Pouek_","Happy New Year!","Pouek_"];
     }
-    var typed = new Typed("#type", {
+    var pouek_typed = new Typed("#pouek", {
         strings: strings,
         typeSpeed: 100,
     });
+    var projects_typed = new Typed("#projects_title", {
+        strings: ["Projects"],
+        typeSpeed: 100,
+    });
+    var experience_typed = new Typed("#experience_title", {
+        strings: ["Experience"],
+        typeSpeed: 100,
+    });
     document.getElementById("year").innerHTML = date.getUTCFullYear();
+    function advance(which){
+        if(which){
+            side++;
+        }
+        else{
+            side--;
+        }
+        switch(side){
+            case 0:
+                document.getElementById("start").style.display = "block";
+                document.getElementById("projects").style.display = "none";
+                document.getElementById("experience").style.display = "none";
+                pouek_typed.reset();
+                break;
+            case 1:
+                document.getElementById("start").style.display = "none";
+                document.getElementById("projects").style.display = "block";
+                document.getElementById("experience").style.display = "none";
+                projects_typed.reset();
+                break;
+            case 2:
+                document.getElementById("start").style.display = "none";
+                document.getElementById("projects").style.display = "none";
+                document.getElementById("experience").style.display = "block";
+                experience_typed.reset();
+                break;
+        }
+    }
 </script>
 </html>
