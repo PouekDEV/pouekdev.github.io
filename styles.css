@@ -64,10 +64,10 @@ body{
     display: flex;
     justify-content: space-between;
 }
-.collection, .links, .right_arrow, .left_arrow, #projects_info, .experience_info{
+.container, .links, .right_arrow, .left_arrow, #projects_info, .experience_info{
     animation: fadeIn 2s;
 }
 @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
-}  
+}
