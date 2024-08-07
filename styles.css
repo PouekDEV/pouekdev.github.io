@@ -40,12 +40,7 @@ body{
 .left_arrow {
     float: left;
 }
-.right_arrow button{
-    background: none;
-    color: white;
-    border: none;
-}
-.left_arrow button{
+.right_arrow button, .left_arrow button{
     background: none;
     color: white;
     border: none;
@@ -60,11 +55,7 @@ body{
 .card-subtitle{
     color: rgb(140, 140, 140) !important;
 }
-.collection{
-    display: flex;
-    justify-content: space-between;
-}
-.container, .links, .right_arrow, .left_arrow, #projects_info, .experience_info{
+.container, .links, .right_arrow, .left_arrow, #projects_info, .about_info{
     animation: fadeIn 2s;
 }
 @keyframes fadeIn {

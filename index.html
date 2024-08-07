@@ -11,19 +11,12 @@
     <meta property="og:title" content="Pouek_'s Website" />
     <meta property="og:description" content="Pouek's personal website" />
     <meta property="og:url" content="https://www.pouekdev.one" />
-    <meta property="og:image" content="https://pouekdev.one/miQZ2R.gif" />
+    <meta property="og:image" content="https://www.pouekdev.one/miQZ2R.gif" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <link rel="stylesheet" href="styles.css">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KZ4YJ36K6F"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-KZ4YJ36K6F');
-    </script>
 </head>
 <body>
     <div class="main">
@@ -47,65 +40,79 @@
                 </p>
             </div>
             <div id="projects" style="display: none;">
-                <div class="display-1">
+                <div class="display-1" style="margin-top: 10rem;">
                     <div class="left_arrow">
                         <button onclick="advance(false)"><i class="bi bi-arrow-left-short"></i></button>
                     </div>
-                    <span id="projects_title" class="display-1"></span>
+                    <span id="projects_title" class=""></span>
                     <div class="right_arrow">
                         <button onclick="advance(true)"><i class="bi bi-arrow-right-short"></i></button>
                     </div>
                 </div>
-                <span id="projects_info">Here are some of my projects I am proud of. This list doesn't include any private ones.</span>
+                <span id="projects_info">Here are some of my projects. This list doesn't include any private ones.</span>
                 <br><br><br>
                 <div class="container">
                     <div class="row h-100 justify-content-center">
-                        <div class="card text-white" style="width: 18rem;">
-                            <div class="card-body">
-                                <h5 class="card-title"><img src="https://cdn.modrinth.com/data/OB9VEcWN/d7f525c754e128e704fe2373c2d2a99598a59c29.png" alt="icon"> CList</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">Minecraft Fabric mod</h6>
-                                <p class="card-text">Coordinate List (CList for short) is a simple minimalistic fabric mod for saving your coordinates. No minimaps.</p>
-                                <a target="_blank" href="https://github.com/PouekDEV/CList" class="card-link github">GitHub</a>
-                                <a target="_blank" href="https://modrinth.com/mod/clist" class="card-link modrinth">Modrinth</a>
-                                <a target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/clist" class="card-link curseforge">CurseForge</a>
+                        <div class="col-12 col-md-3 mb-4">
+                            <div class="card text-white" style="background-position: bottom; background-blend-mode: multiply; background-image: url('https://cdn.modrinth.com/data/OB9VEcWN/images/6a39052ef81a3dc0317719893f4dea47b97fe2b3.png'); background-color: rgba(0,0,0,0.7);">
+                                <div class="card-body">
+                                    <h5 class="card-title"><img src="https://cdn.modrinth.com/data/OB9VEcWN/d7f525c754e128e704fe2373c2d2a99598a59c29.png" alt="icon"><a target="_blank" href="https://github.com/PouekDEV/CList" class="card-link github">CList</a></h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">Minecraft Fabric mod</h6>
+                                    <p class="card-text">CList is a simple minimalistic fabric mod for saving your coordinates. No minimaps.</p>
+                                    <a target="_blank" href="https://modrinth.com/mod/clist" class="card-link modrinth">Modrinth</a>
+                                    <a target="_blank" href="https://www.curseforge.com/minecraft/mc-mods/clist" class="card-link curseforge">CurseForge</a>
+                                </div>
                             </div>
                         </div>
-                        <br>
-                        <div class="card text-white" style="width: 18rem;">
-                            <div class="card-body">
-                                <h5 class="card-title"><img src="https://user-images.githubusercontent.com/64737924/234092116-d079857b-37ab-4837-85c2-d3f27b6ea96b.png" alt="icon"> MYAP</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">A GUI python app</h6>
-                                <p class="card-text">A Minimalistic Youtube Audio Player (MYAP) <br><br><img src="https://user-images.githubusercontent.com/64737924/211200492-55e93000-7a1b-4fa4-b855-1a1f135fd07b.png" alt="GUI" style="width: 100%;border-radius: 0%;"></p>
-                                <a target="_blank" href="https://github.com/PouekDEV/MYAP" class="card-link github">GitHub</a>
+                        <div class="col-12 col-md-3 mb-4">
+                            <div class="card text-white">
+                                <div class="card-body">
+                                    <h5 class="card-title"><img src="https://user-images.githubusercontent.com/64737924/234092116-d079857b-37ab-4837-85c2-d3f27b6ea96b.png" alt="icon"><a target="_blank" href="https://github.com/PouekDEV/MYAP" class="card-link github">MYAP</a></h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">A GUI python app</h6>
+                                    <p class="card-text">A Minimalistic Youtube Audio Player (MYAP) <br><br><img src="https://user-images.githubusercontent.com/64737924/211200492-55e93000-7a1b-4fa4-b855-1a1f135fd07b.png" alt="GUI" style="width: 100%;border-radius: 0%;"></p>
+                                </div>
                             </div>
                         </div>
-                        <br>
-                        <div class="card text-white" style="width: 18rem;">
-                            <div class="card-body">
-                                <h5 class="card-title">This website</h5>
-                                <h6 class="card-subtitle mb-2 text-muted">and my blog</h6>
-                                <a target="_blank" href="https://github.com/PouekDEV/pouekdev.github.io" class="card-link github">GitHub (this website)</a>
-                                <a target="_blank" href="https://github.com/PouekDEV/Blog" class="card-link github">GitHub (blog)</a><br>
-                                <a target="_blank" href="https://blog.pouekdev.one" class="card-link github">Blog</a>
+                        <div class="col-12 col-md-3 mb-4">
+                            <div class="card text-white">
+                                <div class="card-body">
+                                    <h5 class="card-title"><a target="_blank" href="https://github.com/PouekDEV/reddit-proxy" class="card-link github">reddit-proxy</a></h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">Python flask server</h6>
+                                    <p class="card-text">Basic flask server for grabbing reddit videos and embedding them on discord. </p>
+                                </div>
                             </div>
                         </div>
-                        <br>
+                        <div class="col-12 col-md-3 mb-4">
+                            <div class="card text-white" style="background-blend-mode: multiply; background-image: url('https://github.com/PouekDEV/nzxt-integration/raw/main/Screenshot_2.png'); background-color: rgba(0,0,0,0.7);">
+                                <div class="card-body">
+                                    <h5 class="card-title"><a target="_blank" href="https://github.com/PouekDEV/nzxt-integration" class="card-link github">nzxt-integration</a></h5>
+                                    <h6 class="card-subtitle mb-2 text-muted">NZXT integration made in React</h6>
+                                    <p class="card-text">My custom NZXT Web CPU cooler integration.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div id="experience" style="display: none;">
+            <div id="about" style="display: none;">
                 <div class="display-1">
                     <div class="left_arrow">
                         <button onclick="advance(false)"><i class="bi bi-arrow-left-short"></i></button>
                     </div>
-                    <span id="experience_title" class="display-1"></span>
+                    <span id="about_title" class="display-1"></span>
                 </div>
                 <br><br><br>
-                <div class="experience_info">
-                    I know HTML, JS, CSS, C++, SQL, Java, PHP, Python, Some Kotlin, Some React, Tailwind<br>
-                    I can speak English and Polish.<br>
+                <div class="about_info">
+                    I am Pouek_, a random guy from Poland who likes to code all kinds of stuff. I'm interested in linux servers, programming and language learning.<br>
+                    I know HTML, JS, CSS, C++, SQL, Java, PHP and Python (currently learning Rust).<br>
+                    I can speak English and Polish (currently learning Russian).<br>
                     I also know how to manage MySQL databases and Linux servers (mainly Debian and Ubuntu).<br>
-                    And I'm still learning a lot!
+                    <br>
+                    <h3>And here are some stats</h3>
+                    <a href="https://wakatime.com/@8c952089-146a-44a4-bef9-b15de5130b66"><img src="https://wakatime.com/badge/user/8c952089-146a-44a4-bef9-b15de5130b66.svg" alt="Total time coded since Jun 4 2022" /></a><br>
+                    <br>
+                    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=PouekDEV&layout=compact&theme=dark" alt="github most used languages">
+                    <img width="400" src="https://github-readme-stats.vercel.app/api?username=PouekDEV&show_icons=true&theme=dark" alt="other github stats">
                 </div>
             </div>
         </div>
@@ -133,8 +140,8 @@
         strings: ["Projects"],
         typeSpeed: 100,
     });
-    var experience_typed = new Typed("#experience_title", {
-        strings: ["Experience"],
+    var about_typed = new Typed("#about_title", {
+        strings: ["About me"],
         typeSpeed: 100,
     });
     document.getElementById("year").innerHTML = date.getUTCFullYear();
@@ -149,20 +156,20 @@
             case 0:
                 document.getElementById("start").style.display = "block";
                 document.getElementById("projects").style.display = "none";
-                document.getElementById("experience").style.display = "none";
+                document.getElementById("about").style.display = "none";
                 pouek_typed.reset();
                 break;
             case 1:
                 document.getElementById("start").style.display = "none";
                 document.getElementById("projects").style.display = "block";
-                document.getElementById("experience").style.display = "none";
+                document.getElementById("about").style.display = "none";
                 projects_typed.reset();
                 break;
             case 2:
                 document.getElementById("start").style.display = "none";
                 document.getElementById("projects").style.display = "none";
-                document.getElementById("experience").style.display = "block";
-                experience_typed.reset();
+                document.getElementById("about").style.display = "block";
+                about_typed.reset();
                 break;
         }
     }
