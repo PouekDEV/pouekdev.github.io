@@ -1,43 +1,54 @@
 // @ts-nocheck
-let cmd = document.getElementById("cmd");
-let caret = document.getElementById("cursor");
-let previousCommands = document.getElementById("previousCommands");
+// Image to ASCII art converter script?
+const cmd = document.getElementById("cmd");
+const caret = document.getElementById("cursor");
+const previousCommands = document.getElementById("previousCommands");
+const pxFor1ch = document.getElementById("char").getBoundingClientRect().width;
 let commandHistory = []
 let commandHistoryPointer = 0;
 let caretOffset = 0;
 let caretTimeout;
+let cmdFocused = true;
 
 onkeydown = (event) => {
-    if(event.key == "Enter"){
-        updateCaret(-1);
-        let command = cmd.value;
-        command = command.replaceAll("&nbsp;", "");
-        setTimeout(() => cmd.value = "", 5);
-        runCommand(command);
-    }
-    if(event.key == "ArrowUp"){
-        if((commandHistory.length - 1) > commandHistoryPointer){
-            commandHistoryPointer += 1;
-            cmd.value = commandHistory[commandHistoryPointer];
+    if(cmdFocused){
+        if(event.key == "Enter"){
+            event.preventDefault();
+            let command = cmd.value;
+            command = command.replaceAll("&nbsp;", "");
+            setTimeout(() => cmd.value = "", 5);
+            runCommand(command);
         }
-    }
-    if(event.key == "ArrowDown" && -1 < commandHistoryPointer){
-        commandHistoryPointer -= 1;
-        if(commandHistoryPointer == -1){
-            cmd.value = ""
+        if(event.key == "ArrowUp"){
+            if((commandHistory.length - 1) > commandHistoryPointer){
+                commandHistoryPointer += 1;
+                cmd.value = commandHistory[commandHistoryPointer];
+            }
+        }
+        if(event.key == "ArrowDown" && -1 < commandHistoryPointer){
+            commandHistoryPointer -= 1;
+            if(commandHistoryPointer == -1){
+                cmd.value = ""
+            }
+            else{
+                cmd.value = commandHistory[commandHistoryPointer];
+            }
+        }
+        if(event.key == "ArrowUp" || event.key == "ArrowDown"){
+            window.scrollTo(0, document.body.scrollHeight);
+        }
+        caret.style.animationName = "nothing";
+        clearTimeout(caretTimeout);
+        caretTimeout = setTimeout(() => caret.style.animationName = "", 500);
+        if(event.key == "Backspace" && caretOffset != 0){
+            updateCaret(cmd.selectionEnd - 1);
         }
         else{
-            cmd.value = commandHistory[commandHistoryPointer];
+            updateCaret(cmd.selectionEnd);
         }
     }
-    caret.style.animationName = "nothing";
-    clearTimeout(caretTimeout);
-    caretTimeout = setTimeout(() => caret.style.animationName = "", 500);
-    if(event.key == "Backspace" && caretOffset != 0){
-        updateCaret(cmd.selectionEnd - 1);
-    }
     else{
-        updateCaret(cmd.selectionEnd);
+        cmd.focus();
     }
 }
 
@@ -50,8 +61,18 @@ function probeCaret(){
 }
 
 function updateCaret(value = caretOffset){
-    caretOffset = value;
+    if(Math.round(value * pxFor1ch) > cmd.clientWidth){
+        caretOffset = Math.round(cmd.clientWidth / pxFor1ch);
+    }
+    else{
+        caretOffset = value;
+    }
     caret.style.left = 18.2 + caretOffset + "ch";
+}
+
+function updateFocus(state){
+    cmdFocused = state;
+    caret.style.display = state ? "" : "none";
 }
 
 function runCommand(command){
@@ -80,20 +101,26 @@ function runCommand(command){
         command = command.split(" ");
         let output = document.createElement("span");
         let result = "";
-        if(command[0] == "clear"){
-            previousCommands.innerHTML = "";
-        }
-        else if(command[0] == "echo"){
-            result = command.slice(1);
-            result = result.join(" ");
-        }
-        else if(command[0] == "restart"){
-            window.location.reload();
-        }
-        else{
-            result = command[0] + ": command not found";
+        switch(command[0]){
+            case "clear":
+                previousCommands.innerHTML = "";
+                break;
+            case "echo":
+                result = command.slice(1);
+                result = result.join(" ");
+                break;
+            case "restart":
+                window.location.reload();
+                break;
+            case "ls":
+                output.className = "green";
+                result = "spotify";
+                break;
+            default:
+                result = command[0] + ": command not found";
         }
         output.innerHTML = result;
         previousCommands.appendChild(output);
     }
+    window.scrollTo(0, document.body.scrollHeight);
 }

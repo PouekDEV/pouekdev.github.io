@@ -1,6 +1,11 @@
-@font-face {
+@font-face{
     font-family: "Iosevka";
     src: url("/src/fonts/IosevkaTermNerdFontMono-Regular.ttf");
+}
+@keyframes blink{
+    0% {color: black;}
+    50% {color: white;}
+    100% {color: black;}
 }
 *{
     color: white;
@@ -19,15 +24,18 @@ a{
 .margin{
     margin-left: 1.285ch;
 }
-.textarea {
+.textarea{
     display: inline-block;
     white-space: pre-wrap;
     overflow-wrap: break-word;
 }
-@keyframes blink{
-    0% {color: black;}
-    50% {color: white;}
-    100% {color: black;}
+.modrinth{
+    padding-bottom: 0.1rem;
+}
+.input-container {
+    display: flex;
+    align-items: baseline;
+    width: 100%;
 }
 #cursor{
     animation-name: blink;
@@ -44,5 +52,11 @@ a{
     border: none;
     font-size: medium;
     margin-top: -1ch;
-    width: 90%;
+    margin-left: 1ch;
+    flex: 1;
+    min-width: 0;
+}
+#char{
+    width: 1ch;
+    color: black;
 }

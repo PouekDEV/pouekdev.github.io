@@ -18,31 +18,26 @@
     <div id="previousCommands">
         <div id="motd">
             Welcome to my personal website!
-            <br><br>
-            Generally you can find me on these websites:
-            <br><br>
-             * GitHub: <a href="https://github.com/PouekDEV" target="_blank">https://github.com/PouekDEV</a><br>
-             * Reddit: <a href="https://www.reddit.com/user/Pouek_" target="_blank">https://www.reddit.com/user/Pouek_</a><br>
-             * Steam: <a href="https://steamcommunity.com/id/Pouek_" target="_blank">https://steamcommunity.com/id/Pouek_</a><br>
-             * Modrinth: <a href="https://modrinth.com/user/PouekDEV" target="_blank">https://modrinth.com/user/PouekDEV</a><br>
-             * YouTube: <a href="https://www.youtube.com/@pouekdev" target="_blank">https://www.youtube.com/@pouekdev</a>
-            <br><br>
-            If you want to contact me feel free to do so using these methods:
-            <br><br>
-             * Discord: pouek_ <br>
-             * Email: <a href="mailto:stuff@pouekdev.one">stuff@pouekdev.one</a>
-            <br><br>
-            Explore:
-            <br><br>
+            <p>Generally you can find me on these websites:</p>
+            * 󰊤 GitHub: <a href="https://github.com/PouekDEV" target="_blank">https://github.com/PouekDEV</a><br>
+            * 󰑍 Reddit: <a href="https://www.reddit.com/user/Pouek_" target="_blank">https://www.reddit.com/user/Pouek_</a><br>
+            *  Steam: <a href="https://steamcommunity.com/id/Pouek_" target="_blank">https://steamcommunity.com/id/Pouek_</a><br>
+            * <img class="modrinth" width="8" src="src/images/modrinth.svg"> Modrinth: <a href="https://modrinth.com/user/PouekDEV" target="_blank">https://modrinth.com/user/PouekDEV</a><br>
+            *  YouTube: <a href="https://www.youtube.com/@pouekdev" target="_blank">https://www.youtube.com/@pouekdev</a><br>
+            <p>If you want to contact me, feel free to do so using these methods:</p>
+            *  Discord: <a href="https://discord.com/users/504891362081112065" target="_blank">pouek_</a><br>
+            * 󰇮 Email: <a href="mailto:stuff@pouekdev.one">stuff@pouekdev.one</a>
+            <p>Explore:</p>
             Last update: &copy;2025
         </div>
     </div>
-    <div>
+    <div class="input-container">
         <span>
             <span class="green">guest@website</span>:<span class="blue">~</span>$
         </span>
-        <input type="text" id="cmd" autofocus onblur="this.focus()" onkeypress="probeCaret()" spellcheck="false" maxlength="160"></span><span id="cursor">▂</span>
+        <input type="text" id="cmd" autofocus onkeypress="probeCaret()" onblur="updateFocus(false)" onfocus="updateFocus(true)" spellcheck="false"></span><span id="cursor">▂</span>
     </div>
+    <span id="char">0</span>
 </body>
 <script src="src/js/main.js"></script>
 </html>
