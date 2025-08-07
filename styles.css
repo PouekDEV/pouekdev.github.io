@@ -15,6 +15,11 @@
 a{
     color: white;
 }
+pre{
+    margin-top: -0.1ch;
+    margin-bottom: -0.1ch;
+    line-height: 1;
+}
 .green{
     color: greenyellow;
 }
@@ -32,7 +37,7 @@ a{
 .modrinth{
     padding-bottom: 0.1rem;
 }
-.input-container {
+.input-container{
     display: flex;
     align-items: baseline;
     width: 100%;
@@ -48,7 +53,7 @@ a{
 }
 #cmd{
     outline: none;
-    caret-color: transparent !important;
+    /* caret-color: transparent !important; */
     border: none;
     font-size: medium;
     margin-top: -1ch;

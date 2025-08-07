@@ -35,9 +35,11 @@
         <span>
             <span class="green">guest@website</span>:<span class="blue">~</span>$
         </span>
-        <input type="text" id="cmd" autofocus onkeypress="probeCaret()" onblur="updateFocus(false)" onfocus="updateFocus(true)" spellcheck="false"></span><span id="cursor">▂</span>
+        <input type="text" id="cmd" autofocus onmousedown="mouseProbeCaret()" onmouseup="mouseProbeCaret()" onkeypress="probeCaret()" spellcheck="false"></span><span id="cursor">▂</span>
     </div>
     <span id="char">0</span>
 </body>
 <script src="src/js/main.js"></script>
+<script src="src/js/ascii.js"></script>
+<script src="src/js/neofetch.js"></script>
 </html>

@@ -1,17 +1,16 @@
 // @ts-nocheck
-// Image to ASCII art converter script?
 const cmd = document.getElementById("cmd");
 const caret = document.getElementById("cursor");
 const previousCommands = document.getElementById("previousCommands");
 const pxFor1ch = document.getElementById("char").getBoundingClientRect().width;
+document.getElementById("char").remove();
 let commandHistory = []
 let commandHistoryPointer = 0;
 let caretOffset = 0;
 let caretTimeout;
-let cmdFocused = true;
 
 onkeydown = (event) => {
-    if(cmdFocused){
+    if(document.activeElement === cmd){
         if(event.key == "Enter"){
             event.preventDefault();
             let command = cmd.value;
@@ -50,6 +49,7 @@ onkeydown = (event) => {
     else{
         cmd.focus();
     }
+    console.log(cmd.selectionEnd)
 }
 
 onkeyup = (event) => {
@@ -60,22 +60,22 @@ function probeCaret(){
     updateCaret(cmd.selectionEnd + 1);
 }
 
+function mouseProbeCaret(){
+    updateCaret(cmd.selectionEnd);
+}
+
+// This breaks after the text input scrolls
 function updateCaret(value = caretOffset){
-    if(Math.round(value * pxFor1ch) > cmd.clientWidth){
-        caretOffset = Math.round(cmd.clientWidth / pxFor1ch);
-    }
-    else{
+    //if(Math.floor(value * pxFor1ch) > cmd.clientWidth){
+    //    caretOffset = Math.floor(cmd.clientWidth / pxFor1ch);
+    //}
+    //else{
         caretOffset = value;
-    }
+    //}
     caret.style.left = 18.2 + caretOffset + "ch";
 }
 
-function updateFocus(state){
-    cmdFocused = state;
-    caret.style.display = state ? "" : "none";
-}
-
-function runCommand(command){
+async function runCommand(command){
     commandHistoryPointer = 0;
     let div = document.createElement("div");
     let user = document.createElement("span");
@@ -115,6 +115,17 @@ function runCommand(command){
             case "ls":
                 output.className = "green";
                 result = "spotify";
+                break;
+            case "ascii":
+                if(command.length >= 2){
+                    result = "<pre>" + await returnAscii(command[1], command.length >= 3 ? command[2] : 20, command.length >= 4 ? command[3] : 20) + "</pre>";
+                }
+                else{
+                    result = "You must specify a url. Try 'ascii https://www.pouekdev.one/src/images/bettericonkitku.png'. Optionally add width and height."
+                }
+                break;
+            case "neofetch":
+                result = await neofetch();
                 break;
             default:
                 result = command[0] + ": command not found";
